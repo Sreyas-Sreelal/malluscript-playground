@@ -40,16 +40,18 @@ export default function App() {
 
   async function sendRequest() {
     setError("");
-    setOutput("")
-    const response = await sendRunRequest(code, input).catch(error => {
+    setOutput("");
 
+    const response = await sendRunRequest(code, input).catch(error => {
       setError(error)
       return;
     });
+
     if (!response?.ok) {
       setError("Server Error Failed to fetch version");
       return
     }
+    
     const content = await response.json()
     setError("");
     setOutput(content.output)
