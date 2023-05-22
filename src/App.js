@@ -1,9 +1,9 @@
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import { useEffect, useState } from 'react';
-import sendRunRequest from './framework/sendRunRequest';
+import sendRunRequest from './framework/requests/sendRunRequest';
 import { Alert, Box, Button, Grid, Link, TextField, Typography } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import getVersion from './framework/getVersion';
+import getVersion from './framework/requests/getVersion';
 
 export default function App() {
   const [code, setCode] = useState(
