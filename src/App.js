@@ -90,8 +90,11 @@ export default function App() {
                 style={{
                   fontSize: 16,
                   fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
+                  maxHeight:300,
+                  overflowY:"scroll"
                 }}
                 minHeight={300}
+                minLength={300}
               />
             </Box>
           </Grid>
