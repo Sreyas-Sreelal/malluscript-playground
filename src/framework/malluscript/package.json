@@ -1,0 +1,12 @@
+{
+  "name": "malluscript-wasm",
+  "version": "0.1.0",
+  "files": [
+    "malluscript_wasm_bg.wasm",
+    "malluscript_wasm.js",
+    "malluscript_wasm.d.ts"
+  ],
+  "module": "malluscript_wasm.js",
+  "types": "malluscript_wasm.d.ts",
+  "sideEffects": false
+}
