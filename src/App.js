@@ -27,12 +27,7 @@ export default function App() {
     async function fetchVersion() {
       setVersionError("")
       const response = await getVersion();
-      if (!response?.ok) {
-        setVersionError("Server Error");
-        return
-      }
-      const data = await response.json()
-      setVersion(data.version)
+      setVersion(response)
     }
     fetchVersion();
 
@@ -42,19 +37,13 @@ export default function App() {
     setError("");
     setOutput("");
 
-    const response = await sendRunRequest(code, input).catch(error => {
-      setError(error)
-      return;
-    });
+    const response = await sendRunRequest(code, input)
 
-    if (!response?.ok) {
-      setError("Server Error Failed to fetch version");
-      return
-    }
     
-    const content = await response.json()
-    setError("");
-    setOutput(content.output)
+    
+    
+   
+    setOutput(response)
   }
 
   function storeCode(event) {
