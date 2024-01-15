@@ -37,12 +37,7 @@ export default function App() {
     setError("");
     setOutput("");
 
-    const response = await sendRunRequest(code, input)
-
-    
-    
-    
-   
+    const response = await sendRunRequest(code, input)  
     setOutput(response)
   }
 
