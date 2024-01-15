@@ -65,21 +65,22 @@ export default function App() {
               <Box color="#061010">
                 <Button variant='outlined' onClick={sendRequest}><PlayArrowIcon /></Button>
               </Box>
-              <CodeEditor
-                value={code}
-                language="c"
-                placeholder="Please enter Malluscript code."
-                onChange={storeCode}
-                padding={15}
-                style={{
-                  fontSize: 16,
-                  fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
-                  maxHeight: 300,
-                  overflowY: "scroll"
-                }}
-                minHeight={300}
-                minLength={300}
-              />
+              <div style={{ height: 300, overflow: "auto" }}>
+                <CodeEditor
+                  value={code}
+                  language="c"
+                  placeholder="Please enter Malluscript code."
+                  onChange={storeCode}
+                  padding={15}
+                  style={{
+                    fontSize: 16,
+                    fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
+                  }}
+                  maxHeight={300}
+                  minHeight={300}
+                  minLength={300}
+                />
+              </div>
             </Box>
           </Grid>
         </Grid>
