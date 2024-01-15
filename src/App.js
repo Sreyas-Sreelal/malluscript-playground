@@ -37,7 +37,7 @@ export default function App() {
     setError("");
     setOutput("");
 
-    const response = await sendRunRequest(code, input)  
+    const response = await sendRunRequest(code, input)
     setOutput(response)
   }
 
@@ -74,8 +74,8 @@ export default function App() {
                 style={{
                   fontSize: 16,
                   fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
-                  maxHeight:300,
-                  overflowY:"scroll"
+                  maxHeight: 300,
+                  overflowY: "scroll"
                 }}
                 minHeight={300}
                 minLength={300}
