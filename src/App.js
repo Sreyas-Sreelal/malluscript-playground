@@ -82,7 +82,6 @@ export default function App() {
                         fontSize: 16,
                         fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
                       }}
-                      maxHeight={300}
                       minHeight={300}
                       minLength={300}
                     />
