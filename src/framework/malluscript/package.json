@@ -1,6 +1,7 @@
 {
   "name": "malluscript-wasm",
-  "version": "0.1.0",
+  "version": "3.0.0",
+  "type": "module",
   "files": [
     "malluscript_wasm_bg.wasm",
     "malluscript_wasm.js",
