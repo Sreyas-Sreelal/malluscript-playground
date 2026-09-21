@@ -53,7 +53,7 @@ const SAMPLES = [
     id: 'hello',
     title: 'Hello World (നമസ്കാരം ലോകമേ)',
     desc: 'Basic printing and greeting output in Malayalam',
-    code: `// Malluscript Hello World Example
+    code: `
 "നമസ്കാരം ലോകമേ!\\n" കാണിക്കുക;
 "Malluscript v3.0 WebAssembly Engine Active\\n" കാണിക്കുക;
 `
@@ -62,7 +62,7 @@ const SAMPLES = [
     id: 'math',
     title: 'Variables & Math (കൂട്ടലും കിഴിക്കലും)',
     desc: 'Arithmetic expressions, variables, and string concatenation',
-    code: `// Variables & Arithmetic
+    code: `
 a = 15;
 b = 27;
 sum = a + b;
@@ -79,7 +79,7 @@ prod = a * b;
     id: 'loop',
     title: 'Loop Counter (ആവർത്തനം)',
     desc: 'While-loop using Malluscript grammar and accumulator',
-    code: `// Loop Counter (Counts 1 to 5)
+    code: `
 i = 1;
 ആകെ = 0;
 
@@ -96,7 +96,7 @@ i നെകാൾ 6 വലുതാണ് എങ്കിൽ ആവർത്ത�
     id: 'prime',
     title: 'Prime Number Test (പ്രൈം നമ്പർ)',
     desc: 'Conditional checking with modulus and boolean flags',
-    code: `// Prime Number Verification
+    code: `
 നമ്പർ = 17;
 i = 2;
 പ്രൈം_ആണ് = 1;
@@ -120,7 +120,7 @@ i നെകാൾ (നമ്പർ / 2) + 1 വലുതാണ് എങ്ക�
     id: 'fib',
     title: 'Fibonacci Sequence (ഫിബൊനാച്ചി)',
     desc: 'Generate Fibonacci numbers using iterative state swaps',
-    code: `// Fibonacci Sequence Generator
+    code: `
 ആദ്യം = 0;
 രണ്ടാമത് = 1;
 കൗണ്ട് = 8;
