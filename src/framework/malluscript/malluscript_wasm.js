@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* @ts-self-types="./malluscript_wasm.d.ts" */
 
 /**
